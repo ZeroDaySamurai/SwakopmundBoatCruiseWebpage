@@ -1,2 +1,3 @@
-# ThirdPersonWaveSpawnerGame
-Unreal Engine 4 Third Person Game, The game was built using the unreal engine 4 editor and UE Bluprints. It is a wave spawner game where the User has abnormal speed and a lazer beam assualt rifle. The game uses many free Unreal Engine Marketplace free resources.
+# Swakopmund Boat Cruise Website.
+Webpage is a 2D animated website designed for a boat cruise company in Swakomund, it has a music player if the user wants to listen to music and a simple navbar. The webpage is built using HTML, CSS, Javascript
+and a lot of fonts.
