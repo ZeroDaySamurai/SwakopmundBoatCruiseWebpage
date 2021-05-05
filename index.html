@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title> Swakopmund Boat Cruise Official Website.</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navbar">
+        <!--<div class="logo"><h1 class="logo-text">Swakopmund Boat Cruises</h1></div>-->
+                <div class="navbar-icons">
+                    <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <img src="images/cloud.png" class="cloud">
+            <div class="ocean">
+                <img src="images/water.png" class="water">
+                <div class="boat">
+                    <img src="images/boat.png">
+                </div>
+                <div class="boatReflection">
+                    <img src="images/boat.png">
+                </div>
+            </div>
+            <div class="title">
+                <h1>Book a Boat Cruise</h1>
+            </div>
+            <div class="bg-music">
+                <h3>Listen to something while you scroll...</h3>
+                <audio id="myMusic" src="audio/Childish_Gambino-Redbone_Guitar_Loop_Cover.mp3" loop=""></audio>
+                <button class="btn">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                    <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="footer">
+                <p>This website was built on the 15th of April 2021 by Shakeel Hoosain</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".btn .fa-play-circle-o").on('click', function(){
+                    $(this).hide();
+                    $(".fa-pause-circle-o").fadeIn();
+                    $("#myMusic")[0].play();
+                });
+
+                $(".btn .fa-pause-circle-o").on('click', function(){
+                    $(this).hide();
+                    $(".fa-play-circle-o").fadeIn();
+                    $("#myMusic")[0].pause();
+                  });
+            });
+        </script>
+    </body>
+    <footer>
+        
+    </footer>
+</html>

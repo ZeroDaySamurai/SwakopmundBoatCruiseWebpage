@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(images/desertBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.ocean{
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.water{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    animation: water 10s linear infinite;
+}
+
+@keyframes water{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-800PX);
+    }
+}
+
+.boat{
+    width: 350px;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    transform: translateX(-50%) rotateY(-180deg);
+}
+
+.boat img{
+    width: 100%;
+    animation: boat 2s linear infinite;
+}
+
+@keyframes boat{
+    0%{
+        transform: rotate(0deg) translateY(0);
+    }
+    25%{
+        transform: rotate(-1deg) translateY(-3px);
+    }
+    50%{
+        transform: rotate(0deg) translateY(-5px);
+    }
+    75%{
+        transform: rotate(1deg) translateY(-3px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0);
+    }
+}
+
+.boatReflection img{
+    width: 350px;
+    bottom: -30%;
+    left: 40%;
+    position: absolute;
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+    opacity:0.30;
+    filter: alpha(opacity='30');
+    animation: boatReflection 2s linear infinite;
+}
+
+@keyframes boatReflection{
+    0%{
+        transform: rotate(180deg) translateY(0);
+    }
+    25%{
+        transform: rotate(179deg) translateY(3);
+    }
+    50%{
+        transform: rotate(180deg) translateY(5);
+    }
+    75%{
+        transform: rotate(180deg) translateY(3);
+    }
+    100%{
+        transform: rotate(180deg) translateY(0);
+    }
+}
+
+
+.cloud{
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: cloud 10s linear infinite;
+}
+
+@keyframes cloud{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
+
+.title h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 25px;
+    padding: 160px 150px;
+    text-align: center;
+    letter-spacing: 4;
+}
+
+.bg-music{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: transparent;
+    color: #fff;
+    font-size: 78px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    opacity: .3;
+    transition: all linear .2s;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.fa-pause-circle-o{
+    display: none;
+}
+
+h3{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4;
+}
+
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar-icons{
+    color: #fff;
+    text-align:right;
+    padding-top: 20px;
+    padding-right: 30px;
+
+}
+.fa-phone-square{
+    padding-left: 2em;
+}
+
+.fa-book{
+    padding-left: 2em;
+}
+
+.fa-instagram{
+    padding-left: 2em;
+}
